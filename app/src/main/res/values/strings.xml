@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Art Space App</string>
+    <string name="benin_facial_mask">Benin Mask</string>
+    <string name="ife_art">Ife Art</string>
+    <string name="igbo_ukwu_bronze">Igbo Ukwu Bronze</string>
+    <string name="igbo_ukwu_shell">Igbo Ukwu Shell</string>
+    <string name="igbo_ukwu_ichi_facial_mark">Igbo Ukwu Ichi Facial Mark</string>
+    <string name="previous">Previous</string>
+    <string name="next">Next</string>
 </resources>
