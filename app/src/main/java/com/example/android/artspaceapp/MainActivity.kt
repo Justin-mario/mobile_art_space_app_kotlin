@@ -76,15 +76,17 @@ fun ArtSpaceApp(modifier: Modifier = Modifier) {
 
         Card(modifier = modifier
             .fillMaxWidth()
-            .padding(12.dp)
+            .padding(24.dp, 84.dp)
             .background(color = Color.White),
             shape = RoundedCornerShape(4.dp),
-            elevation = CardDefaults.cardElevation(4.dp)
+            elevation = CardDefaults.cardElevation(8.dp)
         ) {
             Column(
                 verticalArrangement = Arrangement.Center,
                 horizontalAlignment = Alignment.CenterHorizontally) {
-                Text(text = "IFE ART")
+                Text(text = "IFE ART",
+                    modifier = Modifier.padding(8.dp),
+                style = MaterialTheme.typography.headlineMedium)
                 Image(painter = painterResource(id = R.drawable.ife_art),
                     contentDescription = null,
                     modifier = Modifier
@@ -105,7 +107,7 @@ fun ArtSpaceApp(modifier: Modifier = Modifier) {
                                 modifier = Modifier
                             )
                         }
-                    Spacer(modifier = Modifier.weight(0.9f))
+                    Spacer(modifier = Modifier.weight(0.5f))
                         Box(modifier = Modifier
 
                             .weight(0.5f)) {
