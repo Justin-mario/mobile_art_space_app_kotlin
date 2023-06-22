@@ -62,16 +62,6 @@ class MainActivity : ComponentActivity() {
 
 
 @Composable
-fun ButtonElement(@StringRes text: Int, modifier: Modifier = Modifier){
-    Button(onClick = { /*TODO*/ }) {
-        Text(text = stringResource(id = text))
-
-
-    }
-
-}
-
-@Composable
 fun ArtSpaceApp(modifier: Modifier = Modifier) {
 
         Card(modifier = modifier
@@ -92,7 +82,9 @@ fun ArtSpaceApp(modifier: Modifier = Modifier) {
                     modifier = Modifier
                         .fillMaxWidth()
                         .padding(16.dp),
-                    contentScale = ContentScale.Crop,)
+                    contentScale = ContentScale.Crop,
+
+                )
 
                 Text(text = "This is an art from ile-ife")
 
@@ -101,32 +93,29 @@ fun ArtSpaceApp(modifier: Modifier = Modifier) {
                         .padding(16.dp)
                         .fillMaxWidth()
                     ) {
-                        Box(modifier = Modifier.weight(0.7f)) {
-                            ButtonElement(
-                                text = R.string.previous,
-                                modifier = Modifier
-                            )
+
+                        Button(modifier = Modifier.weight(0.3F),
+                            onClick = {
+
+                            }) {
+                            Text(text = stringResource(id = R . string.previous))
                         }
-                    Spacer(modifier = Modifier.weight(0.5f))
-                        Box(modifier = Modifier
 
-                            .weight(0.5f)) {
-                            ButtonElement(text = R.string.next,
-                                modifier = modifier,
+                    Spacer(modifier = Modifier.weight(0.3f))
 
-
-
-
-                            )
+                        Button(modifier = Modifier.weight(0.3F),
+                            onClick = {
+                                
+                            }) {
+                            Text(text = stringResource(id = R . string . next))
+                        }
                         }
 
                     }
-
-
             }
 
             }
-        }
+
 
 
 
